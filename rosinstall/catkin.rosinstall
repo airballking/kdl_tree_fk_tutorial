@@ -1,0 +1,4 @@
+- git: 
+    local-name: kdl_tree_fk_tutorial
+    uri: https://github.com/airballking/kdl_tree_fk_tutorial.git
+    version: master
