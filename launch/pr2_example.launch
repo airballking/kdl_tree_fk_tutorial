@@ -1,0 +1,13 @@
+<launch>
+  <include file="$(find pr2_description)/robots/upload_pr2.launch"/>
+
+  <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher">
+    <param name="use_gui" value="true" />
+  </node>
+
+  <node pkg="kdl_tree_fk_tutorial" type="my_robot_state_publisher" name="my_robot_state_publisher"/>
+
+  <node pkg="rviz" type="rviz" name="rviz" required="true"
+        args="-d $(find kdl_tree_fk_tutorial)/config/config.rviz" />
+
+</launch>

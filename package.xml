@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <name>kdl_tree_fk_tutorial</name>
+  <version>0.0.0</version>
+  <description>The kdl_tree_fk_tutorial package</description>
+
+  <maintainer email="georg.bartels@cs.uni-bremen.de">Georg Bartels</maintainer>
+  <author email="georg.bartels@cs.uni-bremen.de">Georg Bartels</author>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>robot_state_publisher</build_depend> <!-- has class tree-fk-solver -->
+  <build_depend>roscpp</build_depend> <!-- ROS C++ client lib -->
+  <build_depend>sensor_msgs</build_depend> <!-- to receive robot joint states -->
+  <build_depend>tf2_kdl</build_depend> <!-- to transform KDL datastructures into TF2 messages -->
+  <build_depend>tf2_ros</build_depend> <!-- to send transforms to TF2 -->
+  <build_depend>kdl_parser</build_depend> <!-- to parse URDF models into KDL trees -->
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>tf2_kdl</run_depend>
+  <run_depend>tf2_ros</run_depend>
+  <run_depend>kdl_parser</run_depend>
+  <run_depend>rviz</run_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>pr2_description</run_depend>
+</package>
